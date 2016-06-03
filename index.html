@@ -7,25 +7,20 @@
 <body>
 	<header class="page-header">
 		<h1 class="visually-hidden">PINK</h1>
-		<div class="page-header__logo">
-			<img src="http://placehold.it/350x150" width="350" height="150" alt="PINK">
-		</div>
 		<nav class="main-nav  main-nav--closed  main-nav-nojs">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
-			<div class="main-nav__wrapper">
-				<div class="main-nav__logo">
-					<img src="http://placehold.it/350x150" width="350" height="150" alt="PINK">
-				</div>
-				<div class="main-nav__close">
-					<span>Закрыть меню</span>
-				</div>
-				<ul class="main-nav__list">
-					<li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-					<li class="main-nav__item"><a href="#">Фотографии</a></li>
-					<li class="main-nav__item"><a href="#">Конкурс</a></li>
-					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
-				</ul>
+			<div class="main-nav__logo">
+				<img src="http://placehold.it/150x50" width="150" height="50" alt="PINK">
 			</div>
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<button class="main-nav__close" type="button">
+				<span>Закрыть меню</span>
+			</button>
+			<ul class="main-nav__list">
+				<li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+				<li class="main-nav__item"><a href="#">Фотографии</a></li>
+				<li class="main-nav__item"><a href="#">Конкурс</a></li>
+				<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+			</ul>
 		</nav>
 	</header>
 	<section class="intro">
@@ -62,9 +57,9 @@
 	<section class="reviews">
 		<h2 class="reviews__title  visually-hidden">Отзывы</h2>
 		<div class="reviews__inner slider">
-			<input class="slider-input" type="radio" name="reviews" id="reviews-input-1" checked>
-			<input class="slider-input" type="radio" name="reviews" id="reviews-input-2">
-			<input class="slider-input" type="radio" name="reviews" id="reviews-input-3">
+			<input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+			<input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+			<input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
 			<div class="reviews__list">
 				<blockquote class="reviews__author  slider-item">
 					<cite class="review__author-name">Николай Петров</cite>
@@ -89,9 +84,9 @@
 	<section class="prices">
 		<h2 class="prices__title visually-hidden">Тарифы</h2>
 		<div class="prices__inner slider">
-			<input class="slider-input" type="radio" name="prices" id="prices-input-1">
-			<input class="slider-input" type="radio" name="prices" id="prices-input-2" checked>
-			<input class="slider-input" type="radio" name="prices" id="prices-input-3">
+			<input class="slider__input" type="radio" name="prices" id="prices-input-1">
+			<input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
+			<input class="slider__input" type="radio" name="prices" id="prices-input-3">
 			<ul class="prices__list">
 				<li class="prices__item prices__item--base slider__item">
 					<span class="prices__name">Базовый</span>
