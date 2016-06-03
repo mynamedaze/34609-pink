@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Пинк</title>
+</head>
+<body>
+	<header class="page-header">
+		<h1 class="visually-hidden">PINK</h1>
+		<div class="page-header__logo">
+			<img src="http://placehold.it/350x150" width="350" height="150" alt="PINK">
+		</div>
+		<nav class="main-nav  main-nav--closed  main-nav-nojs">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<div class="main-nav__wrapper">
+				<div class="main-nav__logo">
+					<img src="http://placehold.it/350x150" width="350" height="150" alt="PINK">
+				</div>
+				<div class="main-nav__close">
+					<span>Закрыть меню</span>
+				</div>
+				<ul class="main-nav__list">
+					<li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+					<li class="main-nav__item"><a href="#">Фотографии</a></li>
+					<li class="main-nav__item"><a href="#">Конкурс</a></li>
+					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="intro">
+		<h2 class="intro__title  visually-hidden">Скачать приложение</h2>
+		<a class="intro__download-app btn" href="#">Скачать приложение</a>
+		<ul class="intro__list">
+			<li class="intro__item">iOS</li>
+			<li class="intro__item">Android</li>
+			<li class="intro__item">Windows Phone</li>
+		</ul>
+		<p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+	</section>
+	<section class="information">
+		<header class="information__header">
+			<h2 class="information__title  visually-hidden">Информация</h2>
+			<span class="information__anwser-question">Устали от серости мегаполиса?</span>
+			<span class="information__anwser-question">Нам есть, что вам предложить!</span>
+		</header>
+		<ul class="information__list">
+			<li class="information__item">
+				<h3 class="information__item-title">Поднимает настроение</h3>
+				<p class="information__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+			</li>
+			<li class="information__item">
+				<h3 class="information__item-title">Меняет мир вокруг</h3>
+				<p class="information__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			</li>
+			<li class="information__item">
+				<h3 class="information__item-title">Заводит новых друзей</h3>
+				<p class="information__item-description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+			</li>
+		</ul>
+	</section>
+	<section class="reviews">
+		<h2 class="reviews__title  visually-hidden">Отзывы</h2>
+		<div class="reviews__inner slider">
+			<input class="slider-input" type="radio" name="reviews" id="reviews-input-1" checked>
+			<input class="slider-input" type="radio" name="reviews" id="reviews-input-2">
+			<input class="slider-input" type="radio" name="reviews" id="reviews-input-3">
+			<ul class="reviews__list">
+				<li class="reviews__item  review__item--reviews-1 slider-item">
+					<h3 class="review__item-name">Николай Петров</h3>
+					<p class="review__item-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				</li>
+				<li class="reviews__item  review__item--reviews-2 slider-item">
+					<h3 class="review__item-name">Прикольная бабка</h3>
+					<p class="review__item-description">«Я ломал стекло!»</p>
+				</li>
+				<li class="reviews__item  review__item--reviews-3 slider-item">
+					<h3 class="review__item-name">Кудайнетов Руслан</h3>
+					<p class="review__item-description">«Он ужэ использавал, захади, брат, захади и юзай-юзай, красавчик будешь, ай маладэц, вах, аегу бери карочи уашпэ ну просто Уася!»</p>
+				</li>
+			</ul>
+			<div class="reviews__toggles slider__toggles">
+				<label class="slider__toggle" for="reviews-input-1">1</label>
+				<label class="slider__toggle" for="reviews-input-2">2</label>
+				<label class="slider__toggle" for="reviews-input-3">3</label>
+			</div>
+		</div>
+	</section>
+	<section class="prices">
+		<h2 class="prices__title visually-hidden">Тарифы</h2>
+		<div class="prices__inner slider">
+			<input class="slider-input" type="radio" name="prices" id="prices-input-1">
+			<input class="slider-input" type="radio" name="prices" id="prices-input-2" checked>
+			<input class="slider-input" type="radio" name="prices" id="prices-input-3">
+			<ul class="prices__list">
+				<li class="prices__item prices__item--base slider__item">
+					<span class="prices__name">Базовый</span>
+					<span class="prices__price">1,99USD</span>
+					<table class="prices__options">
+						<tr>
+							<td class="prices__option">Розовый фильтр</td>
+							<td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+						</tr>
+						<tr>
+							<td class="prices__option">Смайлики</td>
+							<td><img src="http://placehold.it/30x30" width="30" height="30" alt="no"></td>
+						</tr>
+						<tr>
+							<td class="prices__option">Комментарии</td>
+							<td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="no"></td>
+						</tr>
+					</table>
+				</li>
+				<li class="prices__item prices__item--standart slider__item">
+					<span class="prices__name">Стандарт</span>
+					<span class="prices__price">3,99USD</span>
+					<table class="prices__options">
+						<tr>
+							<td class="prices__option">Розовый фильтр</td>
+							<td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+						</tr>
+						<tr>
+							<td class="prices__option">Смайлики</td>
+							<td><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+						</tr>
+						<tr>
+							<td class="prices__option">Комментарии</td>
+							<td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="no"></td>
+						</tr>
+					</table>
+				</li>
+				<li class="prices__item prices__item--unlim slider__item">
+					<span class="prices__name">Анлим</span>
+					<span class="prices__price">9,99USD</span>
+					<table class="prices__options">
+						<tr>
+							<td class="prices__option">Розовый фильтр</td>
+							<td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+						</tr>
+						<tr>
+							<td class="prices__option">Смайлики</td>
+							<td><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+						</tr>
+						<tr>
+							<td class="prices__option">Комментарии</td>
+							<td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+			<div class="prices__toggles slider__toggles">
+				<label class="slider__toggle" for="prices-input-1">1</label>
+				<label class="slider__toggle" for="prices-input-2">2</label>
+				<label class="slider__toggle" for="prices-input-3">3</label>
+			</div>
+		</div>
+	</section>
+	<section class="contacts">
+		<h2 class="contacts__title">Контакты</h2>
+		<div class="contacts__inner">
+			<header class="contacts__header">
+				<span class="contacts__andswer-question">Остались вопросы?<br>Свяжитесь с нами!</span>
+			</header>
+			<p class="contacts__info"><span>Звоните:</span><br><a href="tel:+78125556666">+7 (812) 555-66-66</a><br><span>Пишите:</span><br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a><br><span>Приезжайте в гости:</span><br><a>ул. Большая Конюшенная 19/8</a></p>
+		</div>
+	</section>
+</body>
 </html>
