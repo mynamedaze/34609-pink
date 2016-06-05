@@ -7,16 +7,15 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">PINK</h1>
-    <nav class="main-nav  main-nav--closed  main-nav-nojs">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <div class="main-nav__logo">
         <img src="http://placehold.it/150x50" width="150" height="50" alt="PINK">
       </div>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <button class="main-nav__close" type="button">Закрыть меню</button>
+      <button class="main-nav__open-close" type="button">Открыть меню/Закрыть меню</button>
       <ul class="main-nav__list">
-        <li class="main-nav__item" href="#"><a>Главная</a></li>
-        <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
-        <li class="main-nav__item"><a href="#">Конкурс</a></li>
+        <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
         <li class="main-nav__item"><a href="#">HTML Academy</a></li>
       </ul>
     </nav>
@@ -141,10 +140,10 @@
           <a class="upload-photo__instument upload-photo__instument--cut" href="#"><img src="http://placehold.it/30x30" width="30" height="30" alt="обрезать"></a>
           <a class="upload-photo__instument upload-photo__instument--fill" href="#"><img src="http://placehold.it/30x30" width="30" height="30" alt="заливка"></a>
           <a class="upload-photo__instument upload-photo__instument--colorize" href="#"><img src="http://placehold.it/30x30" width="30" height="30" alt="цвет"></a>
-          <a class="upload-photo__instument upload-photo__instument--size" href="#"><img src="http://placehold.it/30x30" width="30" height="30" alt="масштаб"></a>
+          <input class="upload-photo__instument upload-photo__instument--size" type="range" min="1" max="100">
         </div>
         <input type="submit" name="upload-photo__post-btn" value="Запостить">
-        <input type="submit" name="upload-photo__cancel-btn" value="Отмена">
+        <input type="reset" name="upload-photo__cancel-btn" value="Отмена">
       </form>
     </div>
   </section>
@@ -154,9 +153,11 @@
         <img src="http://placehold.it/150x50" width="150" height="50" alt="PINK">
       </div>
       <div class="page-footer__social">
-        <span class="social-link social-link--twit"><a href="#">Твиттер</a></span>
-        <span class="social-link social-link--fb"><a href="#">Фейсбук</a></span>
-        <span class="social-link social-link--youtube"><a href="#">Ютуб</a></span>
+        <div class="social-list">
+          <a href="#" class="social-link social-link--twit">Твиттер</a>
+          <a href="#" class="social-link social-link--fb">Фейсбук</a>
+          <a href="#" class="social-link social-link--youtube">Ютуб</a>
+        </div>
       </div>
       <div class="page-footer__developer">
         <span>Разработано</span>

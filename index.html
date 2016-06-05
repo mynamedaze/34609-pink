@@ -7,16 +7,15 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">PINK</h1>
-    <nav class="main-nav  main-nav--closed  main-nav-nojs">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <div class="main-nav__logo">
         <img src="http://placehold.it/150x50" width="150" height="50" alt="PINK">
       </div>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <button class="main-nav__close" type="button">Закрыть меню</button>
+      <button class="main-nav__open-close" type="button">Открыть меню/Закрыть меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-        <li class="main-nav__item"><a href="#">Фотографии</a></li>
-        <li class="main-nav__item"><a href="#">Конкурс</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
         <li class="main-nav__item"><a href="#">HTML Academy</a></li>
       </ul>
     </nav>
@@ -55,19 +54,19 @@
   <section class="reviews">
     <h2 class="reviews__title  visually-hidden">Отзывы</h2>
     <div class="reviews__inner slider">
-      <input class="slider__input" type="radio" name="review-1" id="reviews-input-1" checked>
-      <input class="slider__input" type="radio" name="review-2" id="reviews-input-2">
-      <input class="slider__input" type="radio" name="review-3" id="reviews-input-3">
+      <input class="slider__input" type="radio" name="review" id="reviews-input-1" checked>
+      <input class="slider__input" type="radio" name="review" id="reviews-input-2">
+      <input class="slider__input" type="radio" name="review" id="reviews-input-3">
       <div class="reviews__list">
-        <blockquote class="reviews__author  slider-item">
+        <blockquote class="reviews__author  slider__item">
           <cite class="review__author-name">Николай Петров</cite>
           <p class="review__author-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <blockquote class="reviews__author  slider-item">
+        <blockquote class="reviews__author  slider__item">
           <cite class="review__author-name">Прикольная бабка</cite>
           <p class="review__author-description">«Я ломал стекло!»</p>
         </blockquote>
-        <blockquote class="reviews__author  slider-item">
+        <blockquote class="reviews__author  slider__item">
           <cite class="review__author-name">Кудайнетов Руслан</cite>
           <p class="review__author-description">«Он ужэ использавал, захади, брат, захади и юзай-юзай, красавчик будешь, ай маладэц, вах, аегу бери карочи уашпэ ну просто Уася!»</p>
         </blockquote>
@@ -82,9 +81,9 @@
   <section class="prices">
     <h2 class="prices__title visually-hidden">Тарифы</h2>
     <div class="prices__inner slider">
-      <input class="slider__input" type="radio" name="price-1" id="prices-input-1">
-      <input class="slider__input" type="radio" name="price-2" id="prices-input-2" checked>
-      <input class="slider__input" type="radio" name="price-3" id="prices-input-3">
+      <input class="slider__input" type="radio" name="price" id="prices-input-1">
+      <input class="slider__input" type="radio" name="price" id="prices-input-2" checked>
+      <input class="slider__input" type="radio" name="price" id="prices-input-3">
       <ul class="prices__list">
         <li class="prices__item prices__item--base slider__item">
           <span class="prices__name">Базовый</span>

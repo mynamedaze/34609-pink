@@ -7,16 +7,15 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">PINK</h1>
-    <nav class="main-nav  main-nav--closed  main-nav-nojs">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <div class="main-nav__logo">
         <img src="http://placehold.it/150x50" width="150" height="50" alt="PINK">
       </div>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <button class="main-nav__close" type="button">Закрыть меню</button>
+      <button class="main-nav__open-close" type="button">Открыть меню/Закрыть меню</button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#">Главная</a></li>
-        <li class="main-nav__item"><a href="#">Фотографии</a></li>
-        <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
+        <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
         <li class="main-nav__item"><a href="#">HTML Academy</a></li>
       </ul>
     </nav>
@@ -56,12 +55,12 @@
       </fieldset>
       <fieldset class="form-field__used-apps">
         <h3>С каким приложением путешествовали?</h3>
-        <input type="radio" name="pink-iOS" id="pink-iOS-field">
+        <input type="radio" name="pink-OS" id="pink-iOS-field">
         <label for="pink-iOS-field">Pink для iOS</label>
-        <input type="radio" name="pink-Android" id="pink-Android-field">
-        <label for="pink-iOS-field">Pink для Android</label>
-        <input type="radio" name="pink-WP" id="pink-WP-field">
-        <label for="pink-iOS-field">Windows Phone</label>
+        <input type="radio" name="pink-OS" id="pink-Android-field">
+        <label for="pink-Android-field">Pink для Android</label>
+        <input type="radio" name="pink-OS" id="pink-WP-field">
+        <label for="pink-WP-field">Windows Phone</label>
       </fieldset>
       <fieldset class="form-field__user-emotions">
         <h3>Опишите свои эмоции</h3>
@@ -77,9 +76,11 @@
         <img src="http://placehold.it/150x50" width="150" height="50" alt="PINK">
       </div>
       <div class="page-footer__social">
-        <span class="social-link social-link--twit"><a href="#">Твиттер</a></span>
-        <span class="social-link social-link--fb"><a href="#">Фейсбук</a></span>
-        <span class="social-link social-link--youtube"><a href="#">Ютуб</a></span>
+        <div class="social-list">
+          <a href="#" class="social-link social-link--twit">Твиттер</a>
+          <a href="#" class="social-link social-link--fb">Фейсбук</a>
+          <a href="#" class="social-link social-link--youtube">Ютуб</a>
+        </div>
       </div>
       <div class="page-footer__developer">
         <span>Разработано</span>
