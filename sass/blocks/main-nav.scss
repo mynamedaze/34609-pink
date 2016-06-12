@@ -1,0 +1,25 @@
+.main-nav__logo {
+
+}
+.main-nav__open-close {
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-color: transparent;
+  color: transparent;
+  width: 50px;
+  height: 24px;
+  border: none;
+  outline: none;
+}
+.main-nav__list {
+  list-style: none;
+  background-color: #283645;
+}
+.main-nav__item {
+  a {
+  @include white-link;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  }
+}

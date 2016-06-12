@@ -1,0 +1,28 @@
+body {
+  background-color: $main-bg;
+  font-family: $main-font;
+  font-size: $def-text-size;
+  line-height: $def-line-height;
+  color: $gray-text;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+fieldset {
+  border-style: none;
+}

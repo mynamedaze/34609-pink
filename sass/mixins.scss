@@ -1,0 +1,37 @@
+@mixin white-link() {
+  color: $white-text;
+  text-decoration: none;
+}
+@mixin red-link() {
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #d22856;
+}
+@mixin red-label() {
+  color: $red-text;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+@mixin gray-label() {
+  color: $gray-text;
+  font-size: 18px;
+  line-height: 30px;
+}
+@mixin input-text() {
+  font-size: 18px;
+  line-height: 30px;
+}
+@mixin image-intro-bg($bg-back-img) {
+  background-image: $bg-back-img;
+  background-repeat: no-repeat;
+}
+@mixin green-btn () {
+  background-color: #2aab6d;
+  border: none;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $white-text;
+}

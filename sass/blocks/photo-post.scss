@@ -1,0 +1,24 @@
+.photo-post {
+  outline: 1px solid red;
+  position: relative;
+}
+.photo-post__post {
+  background-color: $gray-bg
+}
+.photo-post__daily-photo {
+  position: absolute;
+  left: 0px;
+}
+.photo-post__author {
+  font-style: normal;
+  font-weight: 700;
+}
+.photo-post__time {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+}
+.photo-post__link {
+  color: $red-text;
+  text-transform: uppercase;
+}
