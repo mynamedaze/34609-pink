@@ -1,0 +1,20 @@
+.prices {
+  background-color: $gray-bg;
+}
+.prices__item {
+  background-color: $main-bg;
+  color: $white-text;
+  position: relative;
+}
+.prices__options {
+  background-color: $white-bg;
+  color: $gray-text;
+}
+.prices__item--hit::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+}

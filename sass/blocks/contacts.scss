@@ -1,0 +1,16 @@
+.contacts {
+  background-color: $white-bg;
+}
+.contacts__answer-question {
+  font-size: 24px;
+  font-weight: 300;
+}
+.contacts__info {
+  span {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  a {
+    @include red-link;
+  }
+}

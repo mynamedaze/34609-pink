@@ -1,0 +1,14 @@
+.intro {
+  @include image-intro-bg($image-mobile-bg);
+  color: $white-text;
+}
+.intro__download-app {
+  @include white-link;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+}
+.intro__list {
+  list-style: none;
+}

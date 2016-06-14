@@ -1,0 +1,61 @@
+.form-field {
+  @include image-intro-bg($image-mobile-bg);
+  background-color: orange;
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: $gray-text;
+    @include input-text;
+    font-family: $main-font;
+  }
+}
+.form-field__title {
+}
+.form-field__fullname {
+  background-color: $white-bg;
+  label {
+    @include red-label;
+  }
+}
+.form-field__achievements {
+  background-color: $gray-bg;
+  legend {
+    @include red-label;
+  }
+  label {
+    @include gray-label;
+  }
+}
+.form-field__contacts {
+  background-color: $white-bg;
+  legend {
+    @include red-label;
+  }
+  label {
+    @include red-label;
+  }
+}
+.form-field__used-apps {
+  background-color: $gray-bg;
+  legend {
+    @include red-label;
+  }
+  label {
+    @include gray-label;
+  }
+}
+.form-field__user-emotions {
+  background-color: $white-bg;
+  legend {
+    @include red-label;
+  }
+}
+.form-field__send-form {
+  @include green-btn;
+}
+.form-field__small-text {
+  text-transform: uppercase;
+  line-height: 30px;
+  span {
+    color: $red-text;
+  }
+}

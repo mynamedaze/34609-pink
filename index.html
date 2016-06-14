@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">PINK</h1>
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <div class="main-nav__logo">
-        <img src="http://placehold.it/150x50" width="150" height="50" alt="PINK">
+        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="PINK">
       </div>
       <button class="main-nav__open-close" type="button">Открыть меню/Закрыть меню</button>
       <ul class="main-nav__list">
@@ -24,17 +25,17 @@
     <h2 class="intro__title  visually-hidden">Скачать приложение</h2>
     <a class="intro__download-app  btn" href="#">Скачать приложение</a>
     <ul class="intro__list">
-      <li class="intro__item">iOS</li>
-      <li class="intro__item">Android</li>
-      <li class="intro__item">Windows Phone</li>
+      <li class="intro__item"><img src="img/logo-apple.svg" width="46" height="57" alt="Apple">iOS</li>
+      <li class="intro__item"><img src="img/logo-android.svg" width="42" height="47" alt="Android">Android</li>
+      <li class="intro__item"><img src="img/logo-microsoft.svg" width="44" height="42" alt="Microsoft">Windows Phone</li>
     </ul>
     <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
   </section>
   <section class="information">
     <header class="information__header">
       <h2 class="information__title  visually-hidden">Информация</h2>
-      <span class="information__anwser-question">Устали от серости мегаполиса?</span>
-      <span class="information__anwser-question">Нам есть, что вам предложить!</span>
+      <span class="information__answer-question">Устали от серости мегаполиса?</span>
+      <span class="information__answer-question">Нам есть, что вам предложить!</span>
     </header>
     <ul class="information__list">
       <li class="information__item">
@@ -48,6 +49,7 @@
       <li class="information__item">
         <h3 class="information__item-title">Заводит новых друзей</h3>
         <p class="information__item-description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone-screen">
       </li>
     </ul>
   </section>
@@ -59,16 +61,16 @@
       <input class="slider__input" type="radio" name="review" id="reviews-input-3">
       <div class="reviews__list">
         <blockquote class="reviews__author  slider__item">
-          <cite class="review__author-name">Николай Петров</cite>
-          <p class="review__author-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__author-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
         <blockquote class="reviews__author  slider__item">
-          <cite class="review__author-name">Прикольная бабка</cite>
-          <p class="review__author-description">«Я ломал стекло!»</p>
+          <cite class="reviews__author-name">Прикольная бабка</cite>
+          <p class="reviews__author-description">«Я ломал стекло!»</p>
         </blockquote>
         <blockquote class="reviews__author  slider__item">
-          <cite class="review__author-name">Кудайнетов Руслан</cite>
-          <p class="review__author-description">«Он ужэ использавал, захади, брат, захади и юзай-юзай, красавчик будешь, ай маладэц, вах, аегу бери карочи уашпэ ну просто Уася!»</p>
+          <cite class="reviews__author-name">Кудайнетов Руслан</cite>
+          <p class="reviews__author-description">«Он ужэ использавал, захади, брат, захади и юзай-юзай, красавчик будешь, ай маладэц, вах, аегу бери карочи уашпэ ну просто Уася!»</p>
         </blockquote>
       </div>
       <div class="reviews__toggles slider__toggles">
@@ -91,33 +93,33 @@
           <table class="prices__options">
             <tr>
               <td class="prices__option">Розовый фильтр</td>
-              <td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+              <td class="prices__option-enable"><img src="img/icon-yes.svg" width="27" height="27" alt="yes"></td>
             </tr>
             <tr>
               <td class="prices__option">Смайлики</td>
-              <td><img src="http://placehold.it/30x30" width="30" height="30" alt="no"></td>
+              <td class="prices__option-enable"><img src="img/icon-no.svg" width="27" height="27" alt="no"></td>
             </tr>
             <tr>
               <td class="prices__option">Комментарии</td>
-              <td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="no"></td>
+              <td class="prices__option-enable"><img src="img/icon-no.svg" width="27" height="27" alt="no"></td>
             </tr>
           </table>
         </li>
-        <li class="prices__item prices__item--standart slider__item">
+        <li class="prices__item prices__item--standart prices__item--hit  slider__item">
           <span class="prices__name">Стандарт</span>
           <span class="prices__price">3,99USD</span>
           <table class="prices__options">
             <tr>
               <td class="prices__option">Розовый фильтр</td>
-              <td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+              <td class="prices__option-enable"><img src="img/icon-yes.svg" width="27" height="27" alt="yes"></td>
             </tr>
             <tr>
               <td class="prices__option">Смайлики</td>
-              <td><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+              <td class="prices__option-enable"><img src="img/icon-yes.svg" width="27" height="27" alt="yes"></td>
             </tr>
             <tr>
               <td class="prices__option">Комментарии</td>
-              <td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="no"></td>
+              <td class="prices__option-enable"><img src="img/icon-no.svg" width="27" height="27" alt="no"></td>
             </tr>
           </table>
         </li>
@@ -127,15 +129,15 @@
           <table class="prices__options">
             <tr>
               <td class="prices__option">Розовый фильтр</td>
-              <td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+              <td class="prices__option-enable"><img src="img/icon-yes.svg" width="27" height="27" alt="yes"></td>
             </tr>
             <tr>
               <td class="prices__option">Смайлики</td>
-              <td><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+              <td class="prices__option-enable"><img src="img/icon-yes.svg" width="27" height="27" alt="yes"></td>
             </tr>
             <tr>
               <td class="prices__option">Комментарии</td>
-              <td class="prices__option-enable"><img src="http://placehold.it/30x30" width="30" height="30" alt="yes"></td>
+              <td class="prices__option-enable"><img src="img/icon-yes.svg" width="27" height="27" alt="yes"></td>
             </tr>
           </table>
         </li>
@@ -148,10 +150,10 @@
     </div>
   </section>
   <section class="contacts">
-    <h2 class="contacts__title">Контакты</h2>
+    <h2 class="contacts__title visually-hidden">Контакты</h2>
     <div class="contacts__inner">
       <header class="contacts__header">
-        <span class="contacts__andswer-question">Остались вопросы?<br>Свяжитесь с нами!</span>
+        <span class="contacts__answer-question">Остались вопросы?<br>Свяжитесь с нами!</span>
       </header>
       <p class="contacts__info"><span>Звоните:</span><br><a href="tel:+78125556666">+7 (812) 555-66-66</a><br><span>Пишите:</span><br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a><br><span>Приезжайте в гости:</span><br><a>ул. Большая Конюшенная 19/8</a></p>
     </div>
