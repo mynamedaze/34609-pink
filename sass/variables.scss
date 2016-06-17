@@ -1,4 +1,9 @@
+$mobile-widths-only: "max-width: 767px";
+$tablet-widths: "min-width: 768px";
+$desktop-widths: "min-width: 1200px";
+
 $main-bg: #283645;
+$menu-bg: rgba(0, 0, 0, 0.3);
 $gray-bg: #f2f2f2;
 $white-bg: #ffffff;
 $image-mobile-bg: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
@@ -9,3 +14,6 @@ $gray-text: #283645;
 $red-text: #d22856;
 $def-text-size: 14px;
 $def-line-height: 24px;
+
+$black-shadow: 0 1px 0px 0px #000000;
+$white-inset-shadow: inset 0px 1px 0px 0px rgba(256, 256, 256, 0.15);
