@@ -1,14 +1,69 @@
 .intro {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   @include image-intro-bg($image-mobile-bg);
   color: $white-text;
+  width: $mobile-width;
+  min-height: 733px;
+  @include content-center;
+  margin-top: -69px;
+  @include paddings;
+  @media #{$mobile-widths-only} {
+    background-position: 0 176px, -200px 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  @media #{$tablet-widths} {
+    margin-top: -110px;
+    min-height: 729px;
+    width: $tablet-width;
+    background-position: 0 176px, 120px 0;
+    justify-content: center;
+    background-color: yellow;
+  }
+  @media #{$desktop-widths} {
+    min-height: 853px;
+    width: $desktop-width;
+  }
+}
+.intro__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 271px;
+  background-color: $main-bg-darker;
+  width: 320px;
+  @media #{$tablet-widths} {
+    background-color: red;
+    min-height: 420px;
+  }
+}
+.intro__slogan {
+  @media #{$mobile-widths-only} {
+    display: none;
+  }
 }
 .intro__download-app {
   @include white-link;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-
 }
 .intro__list {
+  padding-left: 58px;
+  padding-right: 58px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro__item {
+
+}
+
+.intro__avaliable-text {
+  text-align: center;
+  width: 250px;
+  font-weight: 300;
 }

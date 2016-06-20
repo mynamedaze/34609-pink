@@ -1,5 +1,24 @@
 .reviews {
   background-color: $white-bg;
+  box-sizing: border-box;
+  @include content-center;
+  @include paddings;
+  @media #{$mobile-widths-only} {
+    width: $mobile-width;
+  }
+  @media #{$tablet-widths} {
+    width: $tablet-width;
+  }
+  @media #{$desktop-widths} {
+    width: $desktop-width;
+  }
+}
+.reviews__list {
+  background-color: red;
+}
+.reviews__author {
+  background-color: green;
+  margin-left: 0px;
 }
 .reviews__author-name {
   font-weight: 700;

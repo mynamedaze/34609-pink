@@ -1,0 +1,28 @@
+.hours24 {
+  display: flex;
+  box-sizing: border-box;
+  color: $white-text;
+  background-color: red;
+  width: 320px;
+  @include content-center;
+  @include paddings;
+  @media #{$mobile-widths-only} {
+    display: none;
+    padding-left: 20px;
+  }
+  @media #{$tablet-widths} {
+    display: flex;
+    width: 700px;
+    min-height: 340px;
+  }
+  @media #{$desktop-widths} {
+    width: 1200px;
+    min-height: 410px;
+  }
+}
+.hours24__logo {
+  background-color: pink;
+}
+.hours24__field {
+  background-color: purple;
+}

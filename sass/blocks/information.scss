@@ -1,16 +1,99 @@
 .information {
-  background-color: $white-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: green;
+  box-sizing: border-box;
+  min-height: 1002px;
+  width: $mobile-width;
+  @include content-center;
+  @include paddings;
+  @media #{$tablet-widths} {
+    width: $tablet-width;
+  }
+  @media #{$desktop-widths} {
+    width: $desktop-width;
+  }
+}
+.information__header,
+.information__inner {
+  box-sizing: border-box;
+}
+.information__header {
+  background-color: white;
 }
 .information__answer-question {
+  display: block;
+  margin-left: auto;
+  line-height: 30px;
+  margin-right: auto;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
+  @media #{$mobile-widths-only} {
+  }
+  @media #{$tablet-widths} {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @media #{$desktop-widths} {
+    font-size: 50px;
+    line-height: 58px;
+  }
+}
+.information__inner {
+  display: flex;
+  flex-direction: column;
+  @media #{$tablet-widths} {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+    @media #{$desktop-widths} {
+    flex-direction: column-reverse;
+  }
 }
 .information__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
   background-color: $gray-bg;
+  margin-bottom: 0px;
+  @media #{$tablet-widths} {
+
+  }
+}
+.information__item {
+
 }
 .information__item-title {
   font-size: 18px;
 }
 .information__item-description {
 }
+.information__picture-list {
+  display: flex;
+  background-color: red;
+  @media #{$tablet-widths} {
+    width: 340px;
+    flex-shrink: 0;
+  }
+}
+.information__picture {
+  margin-left: auto;
+  margin-right: auto;
+}
+.information__picture--1,
+.information__picture--2 {
+  @media #{$mobile-widths-only} {
+    display: none;
+  }
+  @media #{$tablet-widths} {
+    display: none;
+  }
+  @media #{$desktop-widths} {
+    display: block;
+  }
+}
+

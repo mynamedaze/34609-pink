@@ -1,5 +1,23 @@
 .page-footer {
   background-color: $white-bg;
+  box-sizing: border-box;
+  @include content-center;
+  @include paddings;
+  @media #{$mobile-widths-only} {
+    width: $mobile-width;
+    display: none;
+  }
+  @media #{$tablet-widths} {
+    width: $tablet-width;
+  }
+  @media #{$desktop-widths} {
+    width: $desktop-width;
+  }
+}
+.page-footer__inner {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
 }
 .page-developer {
   span {
