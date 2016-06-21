@@ -10,9 +10,11 @@
   @include paddings;
   @media #{$tablet-widths} {
     width: $tablet-width;
+    min-height: 950px;
   }
   @media #{$desktop-widths} {
     width: $desktop-width;
+    min-height: 725px;
   }
 }
 .information__header,
