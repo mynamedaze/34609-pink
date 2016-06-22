@@ -1,7 +1,6 @@
 .prices {
   background-color: $gray-bg;
   @include content-center;
-  background-color: blue;
   box-sizing: border-box;
   overflow: hidden;
   @include paddings;
@@ -15,91 +14,39 @@
     width: $desktop-width;
   }
 }
-
-.prices__list {
-
-  display: flex;
-  list-style: none;
-  background-color: black;
-  @media #{$mobile-widths-only} {
-    margin-left: -305px;
-  }
-  @media #{$tablet-widths} {
-    padding-left: 0px;
-  }
-}
-.prices__item {
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  align-items: flex-end;
-  background-color: $main-bg;
-  color: $white-text;
-  position: relative;
-}
-.prices__item:not(:first-child) {
-  margin-left: -2px;
-}
-.prices__name {
-  background-color: red;
-  @media #{$mobile-widths-only} {
-    width: 276px;
-    border-right: 2px solid $gray-border;
-    border-left: 2px solid $gray-border;
-  }
-  @media #{$tablet-widths} {
-    width: 154px;
-  }
-}
-.prices__price {
-  background-color: pink;
-  @media #{$mobile-widths-only} {
-    width: 276px;
-    border-right: 2px solid $gray-border;
-    border-left: 2px solid $gray-border;
-  }
-  @media #{$tablet-widths} {
-    width: 154px;
-  }
-}
-.prices__options {
-  background-color: $white-bg;
-  color: $gray-text;
+.prices__table {
   border-collapse: collapse;
+  @media #{$mobile-widths-only} {
+    margin-left: -20px;
+    margin-right: 20px;
+    width: 834px;
+    transform: translateX(-230px);
+  }
 }
-.prices__options td {
-  height: 59px;
+.prices__tcell {
   border: 2px solid $gray-border;
 }
-.prices__option {
-  width: 211px;
+.prices__tcell--tab {
+  @media #{$mobile-widths-only} {
+    display: none;
+  }
   @media #{$tablet-widths} {
     width: 153px;
   }
   @media #{$desktop-widths} {
-    width: 230px;
+    width: 234px;
   }
 }
-.prices__item--hit::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
-}
-.prices__option-enable {
-  width: 59px;
+.prices__offer {
   @media #{$tablet-widths} {
     width: 152px;
   }
-    @media #{$desktop-widths} {
-    width: 231px;
+  @media #{$desktop-widths} {
+    width: 233px;
   }
 }
-@media #{$tablet-widths} {
-  .prices__item--standart .prices__option,
-  .prices__item--unlim .prices__option {
+.prices__offer-name--mobile {
+  @media #{$tablet-widths} {
     display: none;
   }
 }

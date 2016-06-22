@@ -85,7 +85,7 @@
   margin-bottom: 0;
   padding: 0;
   list-style: none;
-  background-color: #283645;
+  background-color: $menu-bg;
   width: 700px;
   @media #{$tablet-widths} {
     position: absolute;
