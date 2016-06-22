@@ -1,4 +1,43 @@
 .photo {
-  outline: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
   background-color: $white-bg;
+  @include content-center;
+  @include paddings;
+  @media #{$mobile-widths-only} {
+    flex-direction: column;
+    width: $mobile-width;
+    margin-top: -65px;
+  }
+  @media #{$tablet-widths} {
+    width: $tablet-width;
+    margin-top: -110px;
+  }
+  @media #{$desktop-widths} {
+    width: $desktop-width;
+  }
+}
+.photo__title {
+  margin-top: 0px;
+  min-height: 236px;
+  padding-top: 110px;
+  background-image: $image-mobile-bg;
+  background-repeat: no-repeat;
+  @include margins-negative;
+  color: $white-text;
+}
+.photo__description {
+  background-color: orange;
+  width: 100%;
+  @media #{$mobile-widths-only} {
+    min-height: 284px;
+  }
+  @media #{$tablet-widths} {
+    min-height: 228px;
+  }
+  @media #{$desktop-widths} {
+    min-height: 240px;
+  }
 }

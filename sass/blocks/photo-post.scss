@@ -1,13 +1,26 @@
 .photo-post {
-  outline: 1px solid red;
   position: relative;
+  padding-left: 0px;
+
+  @media #{$tablet-widths} {
+    width: 40%;
+  }
+  @media #{$desktop-widths} {
+    width: 30%;
+  }
+}
+.photo-post--daily {
+  @media #{$tablet-widths} {
+    width: 100%;
+  }
+}
+.photo-post__photo--daily {
+  @include margins-negative;
 }
 .photo-post__post {
-  background-color: $gray-bg
-}
-.photo-post__daily-photo {
-  position: absolute;
-  left: 0px;
+  background-color: $gray-bg;
+  margin-left: 0px;
+  width: 100%;
 }
 .photo-post__author {
   font-style: normal;
