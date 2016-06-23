@@ -27,11 +27,43 @@
   background-image: $bg-back-img;
   background-repeat: no-repeat;
 }
-@mixin green-btn () {
+@mixin green-btn() {
   background-color: #2aab6d;
   border: none;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: $white-text;
+}
+@mixin content-center() {
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin paddings() {
+  @media #{$mobile-widths-only} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media #{$tablet-widths} {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media #{$desktop-widths} {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+@mixin margins-negative() {
+  @media #{$mobile-widths-only} {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  @media #{$tablet-widths} {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  @media #{$desktop-widths} {
+    margin-left: -130px;
+    margin-right: -130px;
+  }
 }

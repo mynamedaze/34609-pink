@@ -1,7 +1,35 @@
 .page-footer {
   background-color: $white-bg;
+  box-sizing: border-box;
+  @include content-center;
+  @include paddings;
+  background-color: orange;
+  @media #{$mobile-widths-only} {
+    width: $mobile-width;
+    display: none;
+  }
+  @media #{$tablet-widths} {
+    width: $tablet-width;
+  }
+  @media #{$desktop-widths} {
+    width: $desktop-width;
+  }
 }
-.page-developer {
+.page-footer--visible {
+  @media #{$mobile-widths-only} {
+    display: block;
+  }
+}
+.page-footer__inner {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  @media #{$mobile-widths-only} {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.page-footer__developer {
   span {
     line-height: 18px;
   }

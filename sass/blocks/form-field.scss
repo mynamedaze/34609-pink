@@ -1,19 +1,79 @@
 .form-field {
-  @include image-intro-bg($image-mobile-bg);
+  box-sizing: border-box;
+  @include content-center;
   background-color: orange;
+  @include paddings;
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
     color: $gray-text;
     @include input-text;
     font-family: $main-font;
   }
+  @media #{$mobile-widths-only} {
+    width: $mobile-width;
+    margin-top: -70px;
+  }
+  @media #{$tablet-widths} {
+    width: $tablet-width;
+    margin-top: -110px;
+  }
+  @media #{$desktop-widths} {
+    width: $desktop-width;
+  }
+}
+.form-field__form {
+  display: flex;
+  @media #{$mobile-widths-only} {
+    flex-direction: column;
+  }
+  @media #{$tablet-widths} {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 .form-field__title {
+  margin-top: 0px;
+  font-weight: 300;
+  color: $white-text;
+  @include image-intro-bg($image-mobile-bg);
+  @include paddings;
+  @include margins-negative;
+  background-color: red;
+  width: 100%;
+  @media #{$mobile-widths-only} {
+    padding-top: 70px;
+    font-size: 24px;
+    min-height: 237px;
+  }
+  @media #{$tablet-widths} {
+    padding-top: 110px;
+    font-size: 50px;
+    min-height: 440px;
+  }
+  @media #{$desktop-widths} {
+    min-height: 394px;
+  }
+}
+.form-field__ur-history {
+  width: 100%;
+  background-color: pink;
+  @media #{$mobile-widths-only} {
+    font-size: 14px;
+  }
 }
 .form-field__fullname {
   background-color: $white-bg;
   label {
     @include red-label;
+  }
+  @media #{$mobile-widths-only} {
+    min-height: 491px;
+  }
+  @media #{$tablet-widths} {
+    min-height: 330px;
+  }
+  @media #{$desktop-widths} {
+    width: 45%;
   }
 }
 .form-field__achievements {
@@ -24,6 +84,19 @@
   label {
     @include gray-label;
   }
+  @media #{$mobile-widths-only} {
+    min-height: 609px;
+    @include margins-negative;
+    @include paddings;
+  }
+  @media #{$tablet-widths} {
+    min-height: 600px;
+  }
+  @media #{$desktop-widths} {
+    min-height: 280px;
+    width: 100%;
+    order: 3;
+  }
 }
 .form-field__contacts {
   background-color: $white-bg;
@@ -32,6 +105,17 @@
   }
   label {
     @include red-label;
+  }
+  @media #{$mobile-widths-only} {
+    min-height: 295px;
+  }
+  @media #{$tablet-widths} {
+    min-height: 370px;
+  }
+  @media #{$desktop-widths} {
+    min-height: 200px;
+    width: 100%;
+    order: 2;
   }
 }
 .form-field__used-apps {
@@ -42,20 +126,47 @@
   label {
     @include gray-label;
   }
+  @media #{$mobile-widths-only} {
+    @include margins-negative;
+    @include paddings;
+  }
+  @media #{$tablet-widths} {
+    width: 100%;
+  }
+  @media #{$desktop-widths} {
+    width: 45%;
+    order: 1;
+  }
 }
 .form-field__user-emotions {
   background-color: $white-bg;
   legend {
     @include red-label;
   }
+  @media #{$mobile-widths-only} {
+    min-height: 310px;
+  }
+  @media #{$tablet-widths} {
+    width: 100%;
+  }
+  @media #{$desktop-widths} {
+    width: 100%;
+    order: 4;
+  }
 }
 .form-field__send-form {
   @include green-btn;
+  @media #{$desktop-widths} {
+    order: 5;
+  }
 }
 .form-field__small-text {
   text-transform: uppercase;
   line-height: 30px;
   span {
     color: $red-text;
+  }
+  @media #{$desktop-widths} {
+    order: 6;
   }
 }
