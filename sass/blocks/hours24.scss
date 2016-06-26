@@ -1,8 +1,9 @@
 .hours24 {
   display: flex;
   box-sizing: border-box;
-  color: $white-text;
-  background-color: red;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: $gray-text;
   width: 320px;
   @include content-center;
   @include paddings;
@@ -13,16 +14,96 @@
   @media #{$tablet-widths} {
     display: flex;
     width: 700px;
-    min-height: 340px;
+    min-height: 402px;
+    padding-top: 58px;
+    background-color: $white-bg;
   }
   @media #{$desktop-widths} {
     width: 1200px;
-    min-height: 410px;
+    padding-top: 22px;
+    min-height: 432px;
+    background-color: $gray-bg;
   }
 }
 .hours24__logo {
-  background-color: pink;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: center;
+  @media #{$tablet-widths} {
+    width: 239px;
+    height: 277px;
+    background-image: $timer-image;
+    background-repeat: no-repeat;
+    background-position: center 55px, 0 0;
+    background-size: 203px 203px, 239px 277px;
+    padding-top: 77px;
+  }
+  @media #{$desktop-widths} {
+    width: 298px;
+    height: 345px;
+    background-size: 251px 251px, 298px 345px;
+    background-position: center 68px, 0 0;
+    padding-top: 95px;
+  }
+}
+.hours24__twenty-four {
+  font-size: 96px;
+  line-height: 150px;
+  color: $red-text;
+  font-weight: 700;
+  @media #{$desktop-widths} {
+    font-size: 120px;
+    line-height: 187px;
+  }
 }
 .hours24__field {
-  background-color: purple;
+  padding-right: 10px;
+  @media #{$tablet-widths} {
+    padding-top: 12px;
+    margin-left: 70px;
+  }
+  @media #{$desktop-widths} {
+    padding-top: 65px;
+  }
+}
+.hours24__title {
+  @media #{$tablet-widths} {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 20px;
+  }
+  br {
+    @media #{$desktop-widths} {
+      display: none;
+    }
+  }
+}
+.hours24__text {
+  @media #{$tablet-widths} {
+    margin-top: 0px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  @media #{$desktop-widths} {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+}
+.hours24__link {
+  color: $red-text;
+  line-height: 24px;
+  &:hover {
+    color: $gray-text;
+  }
+  &:active {
+    color: $red-text--active;
+  }
+  @media #{$desktop-widths} {
+    font-size: 18px;
+  }
 }

@@ -23,10 +23,6 @@
   font-size: 18px;
   line-height: 30px;
 }
-@mixin image-intro-bg($bg-back-img) {
-  background-image: $bg-back-img;
-  background-repeat: no-repeat;
-}
 @mixin green-btn() {
   background-color: #2aab6d;
   border: none;
@@ -34,6 +30,32 @@
   line-height: 30px;
   font-weight: 700;
   color: $white-text;
+}
+@mixin dark-btn() {
+  color: $white-text;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 49px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 36px;
+  padding-right: 36px;
+  &:hover {
+    background-color: #ffffff;
+    color: $red-text;
+  }
+  &:active {
+    color: $red-text--active;
+  }
+  @media #{$tablet-widths} {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  @media #{$desktop-widths} {
+    font-size: 21px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 }
 @mixin content-center() {
   margin-left: auto;

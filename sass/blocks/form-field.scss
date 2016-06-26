@@ -35,7 +35,6 @@
   margin-top: 0px;
   font-weight: 300;
   color: $white-text;
-  @include image-intro-bg($image-mobile-bg);
   @include paddings;
   @include margins-negative;
   background-color: red;

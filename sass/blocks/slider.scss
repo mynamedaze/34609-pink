@@ -1,0 +1,80 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__input {
+  display: none;
+}
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 56px;
+  @media #{$desktop-widths} {
+    display: none;
+  }
+}
+.reviews__toggles {
+  @media #{$desktop-widths} {
+    display: none;
+  }
+}
+.prices__toggles {
+    @media #{$tablet-widths} {
+    display: none;
+  }
+}
+.slider__toggle {
+  text-indent: -10000px;
+  width: 6px;
+  height: 6px;
+  background-color: $toggle-color;
+  border-radius: 50%;
+  &:hover {
+    background-color: $toggle-color--hover;
+  }
+  &:active {
+    background-color: $toggle-color--active;
+  }
+}
+#reviews-input-1:checked ~ .reviews__toggles .slider__toggle--review-1,
+#reviews-input-2:checked ~ .reviews__toggles .slider__toggle--review-2,
+#reviews-input-3:checked ~ .reviews__toggles .slider__toggle--review-3 {
+  background-color: $white-bg;
+  box-shadow: 0 0 0px 3px $toggle-border--active;
+  &:hover {
+    background-color: $white-bg;
+  }
+  &:active {
+    background-color: $white-bg;
+  }
+}
+#reviews-input-1:checked ~ .reviews__list .reviews__author--1,
+#reviews-input-2:checked ~ .reviews__list .reviews__author--2,
+#reviews-input-3:checked ~ .reviews__list .reviews__author--3 {
+  display: flex;
+  flex-direction: column;
+}
+#prices-input-1:checked ~ .prices__toggles .slider__toggle--price-1,
+#prices-input-2:checked ~ .prices__toggles .slider__toggle--price-2,
+#prices-input-3:checked ~ .prices__toggles .slider__toggle--price-3 {
+  background-color: $white-bg;
+  box-shadow: 0 0 0px 3px $toggle-border--active;
+  &:hover {
+    background-color: $white-bg;
+  }
+  &:active {
+    background-color: $white-bg;
+  }
+}
+@media #{$mobile-widths-only} {
+  #prices-input-1:checked ~ .prices__table {
+    transform: translateX(276px);
+  }
+  #prices-input-2:checked ~ .prices__table {
+    transform: translateX(0px);
+  }
+  #prices-input-3:checked ~ .prices__table {
+    transform: translateX(-276px);
+  }
+}
