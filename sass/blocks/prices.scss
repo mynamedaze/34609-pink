@@ -5,6 +5,7 @@
   overflow: hidden;
   @include paddings;
   padding-top: 90px;
+  padding-bottom: 52px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: -855px 0;
@@ -13,11 +14,15 @@
   }
   @media #{$tablet-widths} {
     width: $tablet-width;
+    padding-top: 88px;
+    padding-bottom: 28px;
     background-position: -500px 0;
   }
   @media #{$desktop-widths} {
     width: $desktop-width;
     background-position: -1px 0;
+    padding-top: 145px;
+    padding-bottom: 56px;
   }
 }
 .prices__table {
@@ -28,9 +33,13 @@
   @media #{$mobile-widths-only} {
     width: 834px;
   }
+  @media #{$tablet-widths} {
+  }
 }
 .prices__hcell {
   text-align: center;
+  position: relative;
+  overflow: hidden;
   padding-top: 16px;
   padding-bottom: 20px;
   background-color: $main-bg;
@@ -39,16 +48,51 @@
   b {
     font-size: 18px;
     line-height: 30px;
+    @media #{$tablet-widths} {
+      font-size: 16px;
+    }
+    @media #{$desktop-widths} {
+      font-size: 18px;
+    }
   }
   span {
     font-size: 24px;
     font-weight: 300;
     line-height: 30px;
+    @media #{$tablet-widths} {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @media #{$desktop-widths} {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  @media #{$tablet-widths} {
+    padding-top: 12px;
+    padding-bottom: 13px;
+  }
+  @media #{$desktop-widths} {
+    padding-top: 16px;
+    padding-bottom: 23px;
   }
 }
-.prices__hcell--hit {
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
+.prices__hcell--hit::after {
+  content: "ХИТ";
+  color: $white-text;
+  position: absolute;
+  font-weight: 400;
+  line-height: 30px;
+  transform: rotate(-45deg);
+  top: 5px;
+  left: -30px;
+  width: 100px;
+  height: 30px;
+  background-color: #d22856;
+  @media #{$desktop-widths} {
+    left: -25px;
+    top: 10px;
+  }
 }
 .prices__tcell {
   border: 2px solid $gray-border;
@@ -69,9 +113,13 @@
   }
   @media #{$tablet-widths} {
     width: 153px;
+    text-transform: none;
+    padding-left: 15px;
   }
   @media #{$desktop-widths} {
     width: 234px;
+    padding-left: 23px;
+    font-size: 18px;
   }
 }
 .prices__offer {
@@ -83,10 +131,13 @@
   padding-left: 22px;
   padding-right: 17px;
   @media #{$tablet-widths} {
-    width: 152px;
+    justify-content: center;
+    width: 150px;
+    min-height: 42px;
   }
   @media #{$desktop-widths} {
-    width: 233px;
+    width: 230px;
+    min-height: 56px;
   }
 }
 .prices__offer-name--mobile {
