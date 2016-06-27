@@ -1,7 +1,7 @@
-$mobile-widths-only: "(max-width: 719px)";
-$tablet-widths: "(min-width: 720px)";
-$tablet-widths-max: "(max-width: 1219px)";
-$desktop-widths: "(min-width: 1220px)";
+$mobile-widths-only: "(max-width: 659px)";
+$tablet-widths: "(min-width: 660px)";
+$tablet-widths-max: "(max-width: 959px)";
+$desktop-widths: "(min-width: 960px)";
 
 $mobile-width: 320px;
 $tablet-width: 700px;
@@ -20,6 +20,7 @@ $image-tablet-bg: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-t
 $image-tablet-bg-retina: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
 
 $image-desktop-bg: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+$image-desktop-bg-retina: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@1x.jpg");
 
 $iphone-screen-mobile: url("../img/iphone-screen-mobile@1x.png");
 $iphone-screen-mobile-retina: url("../img/iphone-screen-mobile@2x.png");
@@ -42,6 +43,7 @@ $timer-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer
 $main-font: "Open Sans", "Arial", sans-serif;
 $white-text: #ffffff;
 $gray-text: #283645;
+$gray-link: rgba(255, 255, 255, 0.3);
 $social-border: rgba(40, 54, 69, 0.1);
 $social-border--hover: rgb(40, 54, 69);
 $social-border--active: rgba(40, 54, 69, 0.3);

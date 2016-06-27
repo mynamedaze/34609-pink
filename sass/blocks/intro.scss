@@ -14,9 +14,10 @@
     align-items: center;
     background-image: $image-mobile-bg;
     background-position: 0 175px, -190px 0;
-    @media (min-resolution: 1.5dppx) {
+    background-size: 258px auto, 700px auto;
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
       background-image: $image-mobile-bg-retina;
-      background-size: 258px auto, 700px auto;
     }
   }
   @media #{$tablet-widths} {
@@ -26,7 +27,9 @@
     justify-content: center;
     background-image: $image-tablet-bg;
     background-position: 0 185px, -250px 0px;
-    @media (min-resolution: 1.5dppx) {
+    background-size: 700px auto, 1200px auto;
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
       background-image: $image-tablet-bg-retina;
     }
   }
@@ -35,6 +38,11 @@
     width: $desktop-width;
     background-image: $image-desktop-bg;
     background-position: 145px 208px, -680px 0;
+    background-size: 1050px auto, 2560px auto;
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
+      background-image: $image-desktop-bg-retina;
+    }
   }
 }
 .intro__inner {

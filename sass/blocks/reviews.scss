@@ -13,7 +13,7 @@
   }
   @media #{$desktop-widths} {
     width: $desktop-width;
-    background-image: url("../../img/icon-quotes.svg");
+    background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center 72px;
     padding-top: 155px;
@@ -60,21 +60,21 @@
   }
 }
 .reviews__btn--left {
-  background-image: url("../../img/icon-review-arrow-left.svg");
+  background-image: url("../img/icon-review-arrow-left.svg");
   &:hover {
-    background-image: url("../../img/icon-review-arrow-left--hover.svg");
+    background-image: url("../img/icon-review-arrow-left--hover.svg");
   }
   &:active {
-    background-image: url("../../img/icon-review-arrow-left--active.svg");
+    background-image: url("../img/icon-review-arrow-left--active.svg");
   }
 }
 .reviews__btn--right {
-  background-image: url("../../img/icon-review-arrow-right.svg");
+  background-image: url("../img/icon-review-arrow-right.svg");
   &:hover {
-    background-image: url("../../img/icon-review-arrow-right--hover.svg");
+    background-image: url("../img/icon-review-arrow-right--hover.svg");
   }
   &:active {
-    background-image: url("../../img/icon-review-arrow-right--active.svg");
+    background-image: url("../img/icon-review-arrow-right--active.svg");
   }
 }
 .reviews__author {
