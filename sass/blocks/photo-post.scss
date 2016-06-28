@@ -1,12 +1,11 @@
 .photo-post {
   position: relative;
   padding-left: 0px;
-
   @media #{$tablet-widths} {
-    width: 40%;
+    width: 300px;
   }
   @media #{$desktop-widths} {
-    width: 30%;
+    width: 300px;
   }
 }
 .photo-post--daily {
@@ -14,24 +13,171 @@
     width: 100%;
   }
 }
-.photo-post__photo--daily {
-  @include margins-negative;
-}
 .photo-post__post {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 20px;
+  margin-top: -4px;
   background-color: $gray-bg;
   margin-left: 0px;
   width: 100%;
+  @media #{$mobile-widths-only} {
+    padding-bottom: 20px;
+  }
+  @media #{$tablet-widths} {
+    padding-top: 26px;
+    padding-left: 28px;
+    min-height: 155px;
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 0;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 53px;
+  }
+}
+.photo-post__post--daily {
+  @media #{$tablet-widths} {
+    margin-bottom: 50px;
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    padding-left: 27px;
+    padding-bottom: 14px;
+    min-height: 15px;
+  }
+}
+.photo-post__photo--daily {
+  position: relative;
+  @include margins-negative;
+}
+.photo-post__photo--daily::after {
+  box-sizing: border-box;
+  position: absolute;
+  content: "Панорама дня";
+  color: $white-text;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  padding-top: 6px;
+  font-weight: 700;
+  width: 140px;
+  height: 36px;
+  background-color: #d22856;
+  top: 0;
+  right: 20px;
+  @media #{$tablet-widths} {
+    top: 57px;
+    right: 40px;
+  }
+  @media #{$desktop-widths} {
+    top: 54px;
+    right: 130px;
+  }
 }
 .photo-post__author {
   font-style: normal;
   font-weight: 700;
+  margin-bottom: 0px;
+}
+.photo-post--daily .photo-post__author {
+  @media #{$tablet-widths} {
+    order: 0;
+  }
 }
 .photo-post__time {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 12px;
+  @media #{$tablet-widths} {
+    margin-left: 3px;
+    margin-bottom: 0px;
+  }
 }
+.photo-post--daily .photo-post__time {
+  @media #{$tablet-widths} {
+    order: 1;
+    margin-left: 3px;
+  }
+}
+.photo-post__description {
+  line-height: 24px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  @media #{$tablet-widths} {
+    width: 100%;
+  }
+}
+.photo-post--daily .photo-post__description {
+
+  @media #{$tablet-widths} {
+    order: 4;
+    margin-top: 0px;
+  }
+}
+
 .photo-post__link {
   color: $red-text;
   text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: $gray-text;
+  }
+  &:active {
+    color: $red-text--active;
+  }
+  @media #{$tablet-widths} {
+    margin-top: auto;
+    margin-bottom: 21px;
+    display: flex;
+    width: 100%;
+
+  }
+}
+.photo-post--daily .photo-post__link {
+  @media #{$tablet-widths} {
+    order: 3;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    width: 120px;
+  }
+}
+.photo-post__heart {
+  margin-right: 15px;
+  order: 2;
+  margin-left: auto;
+  margin-right: 13px;
+}
+.photo-post--daily .photo-post__heart {
+  @media #{$tablet-widths} {
+    order: 2;
+  }
+}
+.photo-post__like-text,
+.photo-post__like-count {
+  font-size: 12px;
+  line-height: 24px;
+}
+.photo-post--daily .photo-post__like-text,
+.photo-post--daily .photo-post__like-count {
+  @media #{$tablet-widths} {
+    order: 1;
+  }
+}
+.photo-post__like-count {
+}
+.photo-post--daily .photo-post__like-count {
+  @media #{$tablet-widths} {
+    margin-right: 18px;
+    margin-left: 3px;
+  }
 }

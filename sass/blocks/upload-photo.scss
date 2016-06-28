@@ -1,4 +1,5 @@
 .upload-photo {
+  padding-top: 9px;
   background-color: $white-bg;
   box-sizing: border-box;
   @include paddings;
@@ -8,52 +9,368 @@
   }
   @media #{$tablet-widths} {
     width: $tablet-width;
+    padding-top: 27px;
   }
   @media #{$desktop-widths} {
     width: $desktop-width;
+    padding-top: 6px;
+    padding-bottom: 29px;
+  }
+}
+.upload-photo__slogan {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 42px;
+  @media #{$tablet-widths} {
+    font-size: 18px;
+    margin-bottom: 69px;
+  }
+  @media #{$desktop-widths} {
+    margin-top: 0px;
+    margin-bottom: 66px;
   }
 }
 .upload-photo__form {
+  padding-top: 20px;
   display: flex;
+  box-sizing: border-box;
   background-color: $gray-bg;
   flex-direction: column;
-  flex-wrap: wrap;
-  @media #{$mobile-widths-only} {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
+  align-items: center;
   @media #{$tablet-widths} {
-    height: 510px;
+    padding-top: 57px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: -40px;
-    margin-right: -40px;
+    margin-right: 40px;
+    width: 700px;
+    height: 511px;
+    flex-wrap: wrap;
+    align-content: space-between;
   }
   @media #{$desktop-widths} {
-    height: 514px;
+    width: 100%;
+    min-height: 514px;
     margin-left: 0;
     margin-right: 0;
+    padding-left: 80px;
+    padding-right: 60px;
   }
 }
 
 .upload-photo__ur-photo {
-  background-color: red;
+
   @media #{$tablet-widths} {
-    width: 40%;
   }
 }
 .upload-photo__instruments {
-  background-color: red;
+  position: relative;
+  padding-top: 35px;
+  box-sizing: border-box;
+  display: flex;
+  width: 280px;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 158px;
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  @media #{$mobile-widths-only} {
+    @include margins-negative;
+    width: 320px;
+    padding-bottom: 20px;
+  }
   @media #{$tablet-widths} {
-    height: 230px;
-    width: 30%;
+    min-height: 220px;
+    width: 275px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  @media #{$desktop-widths} {
+    width: 415px;
+    padding-top: 0px;
+    align-content: space-between;
+    align-items: flex-end;
+    padding-right: 14px;
+    min-height: 190px;
+    margin-bottom: 120px;
   }
 }
+.upload-photo__instruments::after {
+  @media #{$tablet-widths} {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 1px;
+    background-color: #dddfe0;
+  }
+}
+.upload-photo__instruments::before {
+  @media #{$tablet-widths} {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 130px;
+    width: 100%;
+    height: 1px;
+    background-color: #dddfe0;
+  }
+}
+.upload-photo__instument {
+  box-sizing: border-box;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media #{$tablet-widths} and #{$tablet-widths-max} {
+    width: 24px;
+    height: 24px;
+    margin-right: 30px;
+  }
+  @media #{$desktop-widths} {
+    margin-right: 45px;
+  }
+  @media #{$tablet-widths} {
+    .upload-photo__instument--crop-svg {
+      width: 24px;
+      height: 24px;
+    }
+    .upload-photo__instument--fill-svg {
+      width: 24px;
+      height: 24px;
+    }
+    .upload-photo__instument--contrast-svg {
+      width: 16px;
+      height: 16px;
+    }
+    .upload-photo__instument--crop-red-svg,
+    .upload-photo__instument--fill-red-svg,
+    .upload-photo__instument--contrats-red-svg {
+      fill: #d22856;
+    }
+  }
+  @media #{$desktop-widths} {
+    .upload-photo__instument--crop-svg {
+      width: 48px;
+      height: 48px;
+    }
+    .upload-photo__instument--fill-svg {
+      width: 48px;
+      height: 48px;
+    }
+    .upload-photo__instument--contrast-svg {
+      width: 31px;
+      height: 31px;
+    }
+  }
+}
+.upload-photo__instument--fill {
+  padding-top: 1px;
+  @media #{$mobile-widths-only} {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+.upload-photo__instument--contrast {
+  padding-top: 8px;
+  @media #{$tablet-widths} and #{$tablet-widths-max} {
+    padding-top: 4px;
+  }
+}
+.upload-photo__instument--active .upload-photo__instument--crop-red-svg {
+  fill: #d22856;
+}
+.upload-photo__instument--active .upload-photo__instument--fill-red-svg {
+  fill: #d22856;
+}
+.upload-photo__instument--active .upload-photo__instument--contrast-red-svg {
+  fill: #d22856;
+}
 .upload-photo__inputs {
+  @media #{$mobile-widths-only} {
+    order: 2;
+  }
+}
+
+/**/
+.upload-photo__inputs[type=range] {
+  -webkit-appearance: none;
+  margin: 0px;
+  background-color: transparent;
+  @media #{$mobile-widths-only} {
+    width: 240px;
+  }
+  @media #{$tablet-widths} {
+    width: 200px;
+    margin-top: 0px;
+    margin-right: 12px;
+  }
+  @media #{$desktop-widths} {
+    width: 290px;
+  }
+}
+.upload-photo__inputs[type=range]:focus {
+  outline: none;
+}
+.upload-photo__inputs[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #283645;
+  border: 0px solid #000101;
+  @media #{$tablet-widths} {
+    margin-top: -50px;
+  }
+}
+.upload-photo__inputs[type=range]::-webkit-slider-thumb {
+  border: 2px solid #d22856;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+/**/
+.upload-photo__inputs--crop[type=range]::-webkit-slider-thumb
+{
+  background: green;
+}
+.upload-photo__inputs--fill[type=range]::-webkit-slider-thumb
+{
+  background: pink;
+}
+.upload-photo__inputs--contrast[type=range]::-webkit-slider-thumb
+{
+  background: yellow;
+}
+/**/
+.upload-photo__inputs[type=range]:hover::-webkit-slider-thumb {
+  background: #d22856;
+}
+.upload-photo__inputs[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #283645;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+.upload-photo__inputs[type=range]::-moz-range-thumb {
+  border: 2px solid #d22856;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.upload-photo__inputs[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 8px 0;
+  color: transparent;
+}
+.upload-photo__inputs[type=range]::-ms-fill-lower {
+  background: #283645;
+
+}
+.upload-photo__inputs[type=range]::-ms-fill-upper {
+  background: #283645;
+  border: 0px solid #000101;
+
+}
+.upload-photo__inputs[type=range]::-ms-thumb {
+  border: 2px solid #d22856;
+  height: 10px;
+  width: 10px;
+  border-radius: 16px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.upload-photo__inputs--none {
   @media #{$mobile-widths-only} {
     display: none;
   }
 }
+
 .upload-photo__submit-field {
+  text-align: center;
+  @media #{$mobile-widths-only} {
+    padding-top: 38px;
+    @include margins-negative;
+    padding-bottom: 33px;
+    width: 320px;
+  }
   @media #{$tablet-widths} {
     width: 40%;
+    margin-top: 36px;
+    margin-right: 35px;
+  }
+  @media #{$desktop-widths} {
+    display: flex;
+    width: 410px;
+    margin-left: 92px;
+    justify-content: space-between;
+  }
+}
+
+.upload-photo__button {
+  background-color: transparent;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-radius: 27px;
+  border: 3px solid #d22856;
+  width: 280px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  @media #{$tablet-widths} {
+    margin-bottom: 25px;
+    width: 260px;
+    margin-left: 10px;
+  }
+  @media #{$desktop-widths} {
+    width: 180px;
+    margin-left: 0px;
+  }
+}
+.upload-photo__button--post {
+  color: #d22856;
+  &:hover {
+    color: $white-text;
+    background-color: #d22856;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+.upload-photo__button--cancel {
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: transparent;
+    background-color: rgba(40, 54, 69, 0.3);
   }
 }
