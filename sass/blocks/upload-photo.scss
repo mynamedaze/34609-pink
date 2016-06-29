@@ -38,6 +38,10 @@
   background-color: $gray-bg;
   flex-direction: column;
   align-items: center;
+  @media #{$mobile-widths-only} {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
   @media #{$tablet-widths} {
     padding-top: 57px;
     padding-left: 40px;

@@ -26,10 +26,19 @@
 @mixin green-btn() {
   background-color: #2aab6d;
   border: none;
+  text-transform: uppercase;
+  border-radius: 3px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: $white-text;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 @mixin dark-btn() {
   color: $white-text;
