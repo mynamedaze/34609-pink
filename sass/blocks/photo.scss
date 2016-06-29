@@ -1,5 +1,6 @@
 .photo {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
@@ -20,24 +21,82 @@
   }
 }
 .photo__title {
+  text-align: center;
+  box-sizing: border-box;
   margin-top: 0px;
-  min-height: 236px;
-  padding-top: 110px;
-  background-image: $image-mobile-bg;
+  padding-top: 95px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-repeat: no-repeat;
+  font-weight: 300;
   @include margins-negative;
   color: $white-text;
-}
-.photo__description {
-  background-color: orange;
-  width: 100%;
   @media #{$mobile-widths-only} {
-    min-height: 284px;
+    font-size: 24px;
+    line-height: 30px;
+    width: $mobile-width;
+    min-height: 236px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: -190px 0;
+    background-size: 700px auto;
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
   }
   @media #{$tablet-widths} {
-    min-height: 228px;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: $tablet-width;
+    min-height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -250px 0;
+    background-size: 1200px auto;
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
   @media #{$desktop-widths} {
-    min-height: 240px;
+    width: $desktop-width;
+    padding-top: 175px;
+    padding-left: 300px;
+    padding-right: 300px;
+    min-height: 394px;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: -680px 0;
+    background-size: 2560px auto;
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+    }
+  }
+}
+.photo__description {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+  @media #{$mobile-widths-only} {
+    margin-top: 25px;
+    margin-bottom: 49px;
+    line-height: 30px;
+  }
+  @media #{$tablet-widths} {
+    margin-top: 50px;
+    margin-bottom: 76px;
+    font-size: 18px;
+    line-height: 30px;
+      padding-left: 70px;
+  padding-right: 70px;
+  }
+  @media #{$desktop-widths} {
+          padding-left: 170px;
+  padding-right: 170px;
+    margin-bottom: 88px;
   }
 }

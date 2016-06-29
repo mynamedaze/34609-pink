@@ -1,18 +1,28 @@
 .social-link {
   display: block;
   font-size: 0px;
-  width: 51px;
-  height: 51px;
+  width: 45px;
+  height: 45px;
   background-repeat: no-repeat;
-  outline: solid 1px red;
-  background-color: red;
+  border: 3px solid $social-border;
+  border-radius: 50%;
+  &:hover {
+    border-color: $social-border--hover;
+  }
+  &:active {
+    border-color: $social-border--active;
+    opacity: 0.3;
+  }
 }
 .social-link--twit {
   background-image: url("../img/icon-twitter.svg");
+  background-position: center;
 }
 .social-link--fb {
   background-image: url("../img/icon-facebook.svg");
+  background-position: center;
 }
 .social-link--youtube {
   background-image: url("../img/icon-youtube.svg");
+  background-position: 17px center;
 }
