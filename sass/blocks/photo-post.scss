@@ -9,7 +9,7 @@
     width: 300px;
   }
 }
-.photo-post--daily {
+.photo__wrapper .photo-post--daily {
   @media #{$tablet-widths} {
     width: 100%;
   }
