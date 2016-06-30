@@ -3,24 +3,32 @@
   flex-direction: column;
   box-sizing: border-box;
   min-height: 1002px;
-  width: $mobile-width;
   @include content-center;
-  @include paddings;
   @media #{$tablet-widths} {
-    width: $tablet-width;
     min-height: 725px;
   }
   @media #{$desktop-widths} {
-    width: $desktop-width;
     min-height: 725px;
   }
 }
 .information__header,
-.information__inner {
+.information__inner,
+.information__inner-wrapper {
   box-sizing: border-box;
 }
+.information__header {
+@include content-center;
+  @media #{$mobile-widths-only} {
+    width: $mobile-width;
+  }
+  @media #{$tablet-widths} {
+    width: $tablet-width;
+  }
+  @media #{$desktop-widths} {
+    width: $desktop-width;
+  }
+}
 .information__answer-question {
-  background-color: $white-bg;
   display: block;
   margin-left: auto;
   line-height: 30px;
@@ -28,7 +36,6 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  @include margins-negative;
   @media #{$mobile-widths-only} {
   }
   @media #{$tablet-widths} {
@@ -41,7 +48,6 @@
   }
 }
 .information__answer-question--q {
-
   @media #{$mobile-widths-only} {
     padding-top: 40px;
   }
@@ -53,39 +59,38 @@
   }
 }
 .information__answer-question--a {
-
   @media #{$mobile-widths-only} {
     padding-top: 25px;
     padding-bottom: 30px;
   }
   @media #{$tablet-widths} {
-    padding-left: 100px;
-    padding-right: 100px;
   }
   @media #{$desktop-widths} {
-    padding-left: 300px;
-    padding-right: 300px;
     padding-bottom: 80px;
   }
 }
 .information__inner {
-  display: flex;
-  flex-direction: column;
-  @include margins-negative;
-  @include paddings;
   background-color: $gray-bg;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.information__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  @include content-center;
   @media #{$mobile-widths-only} {
-    background-position: -860px 0;
     padding-top: 51px;
+    width: $mobile-width;
   }
   @media #{$tablet-widths} {
     background-position: -1px 0;
     flex-direction: row-reverse;
+    width: $tablet-width;
   }
   @media #{$desktop-widths} {
     flex-direction: column-reverse;
+    width: $desktop-width;
   }
 }
 .information__list {

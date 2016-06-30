@@ -2,12 +2,6 @@
   position: relative;
   z-index: 10;
   background-color: $menu-bg;
-  width: $mobile-width;
+  width: 100%;
   @include content-center;
-  @media #{$tablet-widths} {
-    width: $tablet-width;
-  }
-  @media #{$desktop-widths} {
-    width: $desktop-width;
-  }
 }

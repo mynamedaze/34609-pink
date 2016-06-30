@@ -1,9 +1,11 @@
 .reviews {
+  width: 100%;
+}
+.reviews__wrapper {
   background-color: $white-bg;
   box-sizing: border-box;
   padding-bottom: 45px;
   @include content-center;
-  @include paddings;
   @media #{$mobile-widths-only} {
     width: $mobile-width;
   }

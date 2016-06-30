@@ -3,9 +3,9 @@ $tablet-widths: "(min-width: 660px)";
 $tablet-widths-max: "(max-width: 959px)";
 $desktop-widths: "(min-width: 960px)";
 
-$mobile-width: 320px;
-$tablet-width: 700px;
-$desktop-width: 1200px;
+$mobile-width: 280px;
+$tablet-width: 620px;
+$desktop-width: 940px;
 
 $main-bg: #283645;
 $main-bg-darker: #1d2631;
@@ -13,14 +13,23 @@ $menu-bg: rgba(0, 0, 0, 0.3);
 $gray-bg: #f2f2f2;
 $white-bg: #ffffff;
 
-$image-mobile-bg: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-$image-mobile-bg-retina: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+$image-mobile-bg: url("../img/bg-back-mobile@1x.jpg");
+$image-mobile-bg-retina: url("../img/bg-back-mobile@2x.jpg");
 
-$image-tablet-bg: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-$image-tablet-bg-retina: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+$image-tablet-bg: url("../img/bg-back-tablet@1x.jpg");
+$image-tablet-bg-retina: url("../img/bg-back-tablet@2x.jpg");
 
-$image-desktop-bg: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-$image-desktop-bg-retina: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@1x.jpg");
+$image-desktop-bg: url("../img/bg-back-desktop@1x.jpg");
+$image-desktop-bg-retina: url("../img/bg-back-desktop@1x.jpg");
+
+$image-mobile-bg-hand: url("../img/iphone-hand-mobile@1x.png");
+$image-mobile-bg-hand-retina: url("../img/iphone-hand-mobile@2x.png");
+
+$image-tablet-bg-hand: url("../img/iphone-hand-tablet@1x.png");
+$image-tablet-bg-hand-retina: url("../img/iphone-hand-tablet@2x.png");
+
+$image-desktop-bg-hand: url("../img/iphone-hand-desktop@1x.png");
+$image-desktop-bg-hand-retina: url("../img/iphone-hand-desktop@2x.png");
 
 $iphone-screen-mobile: url("../img/iphone-screen-mobile@1x.png");
 $iphone-screen-mobile-retina: url("../img/iphone-screen-mobile@2x.png");

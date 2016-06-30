@@ -1,28 +1,29 @@
 .hours24 {
+  width: 100%;
+  @media #{$desktop-widths} {
+    background-color: $gray-bg;
+  }
+}
+.hours24__wrapper {
   display: flex;
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: space-between;
   color: $gray-text;
-  width: 320px;
   @include content-center;
-  @include paddings;
   @media #{$mobile-widths-only} {
     display: none;
-    padding-left: 20px;
   }
   @media #{$tablet-widths} {
     display: flex;
-    width: 700px;
+    width: $tablet-width;
     min-height: 402px;
     padding-top: 58px;
-    background-color: $white-bg;
   }
   @media #{$desktop-widths} {
-    width: 1200px;
+    width: $desktop-width;
     padding-top: 22px;
     min-height: 432px;
-    background-color: $gray-bg;
   }
 }
 .hours24__logo {

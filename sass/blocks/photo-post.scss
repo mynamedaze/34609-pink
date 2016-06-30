@@ -1,6 +1,7 @@
 .photo-post {
   position: relative;
   padding-left: 0px;
+  overflow: hidden;
   @media #{$tablet-widths} {
     width: 300px;
   }
