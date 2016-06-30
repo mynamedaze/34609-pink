@@ -1,16 +1,18 @@
 .prices {
+  width: 100%;
   background-color: $gray-bg;
+    background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.prices__wrap {
   @include content-center;
   box-sizing: border-box;
   overflow: hidden;
-  @include paddings;
   padding-top: 90px;
   padding-bottom: 52px;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: -855px 0;
   @media #{$mobile-widths-only} {
-    width: $mobile-width;
+    width: 100%;
   }
   @media #{$tablet-widths} {
     width: $tablet-width;

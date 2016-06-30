@@ -42,13 +42,13 @@
 }
 @mixin dark-btn() {
   color: $white-text;
+  text-align: center;
   text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 49px;
   padding-top: 15px;
   padding-bottom: 17px;
-  padding-left: 36px;
-  padding-right: 36px;
+  width: 276px;
   &:hover {
     background-color: #ffffff;
     color: $red-text;
@@ -57,13 +57,10 @@
     color: $red-text--active;
   }
   @media #{$tablet-widths} {
-    padding-left: 45px;
-    padding-right: 45px;
+  width: 296px;
   }
   @media #{$desktop-widths} {
     font-size: 21px;
-    padding-left: 28px;
-    padding-right: 28px;
   }
 }
 @mixin content-center() {
