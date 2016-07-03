@@ -1,4 +1,6 @@
 .hours24 {
+  box-sizing: border-box;
+  padding-bottom: 10px;
   width: 100%;
   @media #{$desktop-widths} {
     background-color: $gray-bg;

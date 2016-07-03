@@ -84,7 +84,7 @@
   @include content-center;
   font-weight: 300;
   color: $white-text;
-    @media #{$mobile-widths-only} {
+  @media #{$mobile-widths-only} {
     width: $mobile-width;
     font-size: 24px;
     line-height: 29px;
@@ -143,6 +143,7 @@
 }
 .form-field__pseudocheck {
   position: relative;
+  flex-shrink: 0;
   width: 35px;
   height: 35px;
   background-color: #ffffff;
@@ -180,6 +181,7 @@
   }
 }
 .form-field__pseudoradio {
+  flex-shrink: 0;
   position: relative;
   width: 35px;
   height: 35px;
@@ -300,7 +302,7 @@
     margin-bottom: 51px;
     width: $tablet-width;
   }
-    @media #{$tablet-widths} and #{$tablet-widths-max} {
+  @media #{$tablet-widths} and #{$tablet-widths-max} {
     @include content-center;
   }
   @media #{$desktop-widths} {
@@ -312,6 +314,17 @@
 .form-field__container--achiev {
   @media #{$desktop-widths} {
     width: 260px;
+  }
+}
+@media #{$desktop-widths} {
+  .form-field__container--achiev-selfie {
+    order: -6;
+  }
+  .form-field__container--achiev-chuck {
+    order: -5;
+  }
+  .form-field__container--achiev-tower {
+    order: -4;
   }
 }
 .form-field__legends--achiev {
@@ -385,15 +398,15 @@
   padding-left: 0px;
   margin-bottom: 37px;
 }
-.form-field__achiev-fieldset-FIX {
+.form-field__achiev-fieldset-fix {
   @media #{$desktop-widths} {
     display: flex;
-    flex-direction: column;
-    height: 170px;
+    flex-direction: row;
+    min-height: 170px;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
     align-content: space-between;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 .form-field__contacts {
@@ -511,7 +524,7 @@
     background-position: center;
   }
 }
-.form-field__contacts-fieldset-FIX {
+.form-field__contacts-fieldset-fix {
   @media #{$desktop-widths} {
     display: flex;
     justify-content: space-between;
@@ -551,9 +564,9 @@
     margin-bottom: 0px;
   }
 }
-#pink-iOS-field:checked ~ .form-field__label .form-field__pseudoradio--iOS,
-#pink-Android-field:checked ~ .form-field__label .form-field__pseudoradio--android,
-#pink-WP-field:checked ~ .form-field__label .form-field__pseudoradio--WP {
+#pink-ios-field:checked ~ .form-field__label .form-field__pseudoradio--ios,
+#pink-android-field:checked ~ .form-field__label .form-field__pseudoradio--android,
+#pink-wp-field:checked ~ .form-field__label .form-field__pseudoradio--wp {
   &::after {
     position: absolute;
     content: "";

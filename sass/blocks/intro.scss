@@ -51,10 +51,6 @@
     justify-content: flex-end;
     min-height: 733px;
     width: $mobile-width;
-    @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      background-image: $image-mobile-bg-hand-retina;
-    }
   }
   @media #{$tablet-widths} {
     min-height: 729px;
@@ -62,10 +58,6 @@
     background-image: $image-tablet-bg-hand;
     background-size: 700px 545px;
     background-position: -40px 100%;
-    @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      background-image: $image-tablet-bg-hand-retina;
-    }
   }
   @media #{$desktop-widths} {
     min-height: 853px;
@@ -73,8 +65,16 @@
     background-image: $image-desktop-bg-hand;
     background-size: 1050px 645px;
     background-position: 17px 100%;
-    @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
+  }
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    @media #{$mobile-widths-only} {
+      background-image: $image-mobile-bg-hand-retina;
+    }
+    @media #{$tablet-widths} {
+      background-image: $image-tablet-bg-hand-retina;
+    }
+    @media #{$desktop-widths} {
       background-image: $image-desktop-bg-hand-retina;
     }
   }
