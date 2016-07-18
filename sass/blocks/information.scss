@@ -148,13 +148,18 @@
   line-height: 24px;
   text-align: center;
   margin-top: 0px;
+  @media #{$mobile-widths-only} {
+    width: 280px;
+  }
   @media #{$tablet-widths} {
     text-align: left;
+    width: 320px;
   }
   @media #{$desktop-widths} {
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+    width: 260px;
   }
 }
 .information__picture {

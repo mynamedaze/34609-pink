@@ -48,7 +48,6 @@
     background-image: $image-mobile-bg-hand;
     background-size: 258px 286px;
     background-position: 0 176px;
-    justify-content: flex-end;
     min-height: 733px;
     width: $mobile-width;
   }
@@ -89,6 +88,7 @@
     width: $mobile-width;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 460px;
   }
   @media #{$tablet-widths} {
     margin-top: 90px;
